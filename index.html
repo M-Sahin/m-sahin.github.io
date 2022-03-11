@@ -3,67 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--displays site properly based on user's device-->
+    <link rel='stylesheet' href='style.css'>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <title>Komputer Store</title>
+    <title>Komputer Store Assignment</title>
 </head>
 <body>
-    <!--Container for all the content in the interface-->
-    <div class="container">
-
-        <!--div for bank account contents-->
-        <div class="bank content">
-            <h3>Bank Account</h3>
-            <div class="balance">
-                <p>Account Balance:</p>
-                <p class="bankBalance" id="bankBalance"></p>
+    <div class='container'>
+            <div class='content bank'>
+                <h3>Bank account</h3>
+                <div class='balance'>
+                    <p>Balance</p>
+                    <p id='bankBalance' class='bankBalance'></p>
+                </div>
+                <div id='loan'>
+                    <p>Loan</p>
+                    <p id='loanBalance' class='loanBalance'></p>
+                </div>
+                <div class='buttons'>
+                    <button id='getLoanButton' class='button'>Take loan</button>
+                    <button id='repayLoanButton' class='button'>Repay loan</button>
+                </div>
             </div>
-            <div id="loan">
-                <p>Loan</p>
-                <p class="loanBalance" id="loanBalance"></p>
+        <div class='content work'>
+            <h3>Job at the mall</h3>
+            <div class='pay'>
+                <p>Salary</p>
+                <p id='workBalance' class='workBalance'></p>
             </div>
-            <div class="buttons">
-                <button id="takeLoanButton" class="button">Take loan</button>
-                <button id="repayLoanButton" class="button">Repay loan</button>
+            
+            <div class='buttons'>
+                <button id='workButton' class='button'>Get to work!</button>
+                <button id='bankButton' class='button'>Put it in the bank</button>  
             </div>
+            
         </div>
-
-        <!--div for work balance contents-->
-        <div class="content work">
-            <h3>Work</h3>
-            <div class="pay">
-                <p>Pay</p>
-                <p id="workBalance" class="workBalance"></p>
-            </div>
-            <div class="buttons">
-                <button id="workButton" class="button">Work!</button>
-                <button id="bankButton" class="button">Put it in the bank</button>
-            </div>
-        </div>
-
-        <!--div for list of laptops-->
-        <div class="content laptops">
-            <h3>Check these laptops</h3>
-            <select id="laptopsMenu"></select>
-            <div class="features">
+        <div class='content laptops'>
+            <h3>Laptops</h3>
+            <select id='laptopsMenu'></select>
+            <div class='features'>
                 <p>Features</p>
-                <p id="featuresList" class="featuresList"></p>
+                <p id='featuresList' class='featuresList'></p>
             </div>
         </div>
-
-        <!--seperate div for details of selected laptops-->
         <div class=' content details'>
             <img id='laptopImage'>
             <h2 id='laptopTitle'></h2>
             <p id='laptopDescription' class='laptopDescription'></p>
-            <h2 id='laptopPrice'></h2>
+            <h3 id='laptopPrice'></h3>
             <div class='buttons'>
-                <button id='buyButton' class='button'>Buy now!</button>
+                <button id='buyButton' class='button'>Just buy it</button>
             </div>
         </div>
     </div>
-
-<script src="app.js"></script>
+    <script src='app.js'></script>
 </body>
 </html>

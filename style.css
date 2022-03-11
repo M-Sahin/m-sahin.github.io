@@ -1,4 +1,79 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    color: #000000;
+	font-family: "Roboto", sans-serif;
+	color: black;
+    background: linear-gradient(#3D7EAA, #FFE47A);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+	display: grid;
+	margin: 50px;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+	justify-items: stretch;
+	align-items: stretch;
+}
+
+.content * {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+	padding: 20px;
+}
+
+.buttons {
+	display: flex;
+	flex-direction: column;
+	align-self: flex-end;
+	margin-top: auto;
+}
+
+.button {
+	display: inline-block;
+	width: 100%;
+	color: #fff;
+	background-color: cadetblue;
+	outline: none;
+	border: none;
+	height: 30px;
+	border-radius: 4px;
+	font-size: 20px;
+	margin: 5px 0;
+	cursor: pointer;
+}
+
+.button:hover {
+	background-color: cadetblue;
+}
+
+.balance,
+.loan,
+.pay {
+	display: flex;
+	font-weight: 500;
+}
+
+.bankBalance,
+.loanBalance,
+.workBalance {
+	display: flex;
+	width: 100%;
+	justify-content: flex-end;
+	font-weight: 100;
+}
+
+.featuresList,
+.laptopDescription {
+	font-size: 14px;
+	font-weight: 200;
 }
