@@ -1,6 +1,5 @@
 # Komputer-Store-Assignment
 
-![GitHub repo size](https://img.shields.io/github/repo-size/m-sahin/Komputer-Store-Assignment)
 
 [Assignment PDF](https://lms.noroff.no/pluginfile.php/184813/mod_assign/introattachment/0/JavaScript_Komputer%20Store%20App.pdf?forcedownload=1)
 
